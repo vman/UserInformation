@@ -40,6 +40,7 @@ export default class UserInformationWebPart extends BaseClientSideWebPart<IUserI
       </div>`;
 
     const serviceScope: ServiceScope = ServiceScope.startNewRoot();
+    const currentScope: ServiceScope = this.context.serviceScope;
     const userProfileServiceKey: ServiceKey<IUserProfileService> = ServiceKey.create<IUserProfileService>("userprofileservicekey", UserProfileService);
     const mockUserProfileServiceKey: ServiceKey<IUserProfileService> = ServiceKey.create<IUserProfileService>("mockuserprofileservicekey", MockUserProfileService);
     serviceScope.createDefaultAndProvide(userProfileServiceKey);
