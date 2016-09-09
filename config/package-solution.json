@@ -1,0 +1,10 @@
+{
+  "solution": {
+    "name": "user-information-client-side-solution",
+    "id": "cdfd8006-0d99-44db-8fae-00f3f1dfe77e",
+    "version": "1.0.0.0"
+  },
+  "paths": {
+    "zippedPackage": "user-information.spapp"
+  }
+}
